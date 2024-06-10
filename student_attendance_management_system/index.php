@@ -54,7 +54,6 @@ $assignments = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <table class="table table-bordered mt-3">
             <thead class="thead-light">
                 <tr>
-                    <th>ID</th>
                     <th>Course</th>
                     <th>Title</th>
                     <th>Due Date</th>
@@ -64,7 +63,6 @@ $assignments = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <tbody>
                 <?php foreach ($assignments as $assignment): ?>
                     <tr>
-                        <td><?php echo htmlspecialchars($assignment['id']); ?></td>
                         <td><?php echo htmlspecialchars($assignment['course']); ?></td>
                         <td><?php echo htmlspecialchars($assignment['title']); ?></td>
                         <td><?php echo htmlspecialchars($assignment['due_date']); ?></td>
